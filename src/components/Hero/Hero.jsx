@@ -1,7 +1,7 @@
 import React from 'react'
 import './Hero.scss'
 
-const Hero = () => {
+const Hero = ({btn}) => {
   return (
     <>
       <section className="hero">
@@ -10,7 +10,7 @@ const Hero = () => {
             <div className="hero__info">
               <h1>Building Digital Products, Brands & Experience</h1>
               <p>Digital Agency Is Your Online Team Mangement Tool That Easy And Prompt</p>
-              <button>Contact Us</button>
+              <button>{btn}</button>
             </div>
             <img src="/hero-img.png" alt="" />
           </div>

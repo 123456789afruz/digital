@@ -1,0 +1,25 @@
+.say__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 30px 100px;
+    max-width: 350px;
+    border-radius: 20px;
+    color: #272D38;
+    h4 {
+        margin: 8px 0 27px;
+        // font-size: 24px;
+        font-size: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem);
+        font-weight: 400;
+
+        
+    }
+
+    p {
+        text-align: center;
+        line-height: 1.4;
+        max-width: 500px;
+        font-size: clamp(0.563rem, 0.403rem + 0.8vw, 1rem);
+    }
+}
