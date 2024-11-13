@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Header.scss'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 
@@ -18,10 +19,10 @@ const Header = () => {
             <nav className="nav">
                 <a href="" className="header__logo">Digital Agency</a>
                 <div className={`header__menu ${active ? 'active' : ''}`}>
-                    <a href="">home</a>
-                    <a href="">about</a>
-                    <a href="">testimonials</a>
-                    <a href="">contact</a>
+                    <Link to={'/'} href="">home</Link>
+                    <Link to={'/about'} href="">about</Link>
+                    <Link to={'/testimonials'} href="">testimonials</Link>
+                    <Link to={'/contacts'} href="">contact</Link>
                 </div>
                 <img onClick ={toggleBurger} src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="" className={`burger ${active ? 'active' : ''}`} />
             </nav>

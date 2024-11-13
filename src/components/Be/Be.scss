@@ -2,21 +2,26 @@
     img {
         max-width: 450px;
         width: 100%;
+        @media (max-width: 600px) {
+            display: none;
+        }
+        
     }
-    margin: 0 0 100px;
-    background-color: #F6F6F6;
-    padding: 80px 100px;
-    border-radius: 20px;
-    max-width: 1150px;
-    margin: 0 auto;
+    
     
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        background-color: #F6F6F6;
+        border-radius: 20px;
+        padding: 60px 50px;
         @media (max-width: 600px) {
-            flex-direction: column;
+            grid-template-columns: 1fr;
+            justify-content: center;
         }
+        
+        
         
 
     }
@@ -24,25 +29,33 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        justify-content: center;
+        @media (max-width: 600px) {
+        align-items: center;
+            
+        }
+        
         h2 {
+            // font-size: 72px;
             font-size: clamp(2rem, 1.091rem + 4.55vw, 4.5rem);
+            line-height: 1.2;
+            @media (max-width: 600px) {
+                text-align: center;
+                
+            }
+            
            
 
         }
         p {
             max-width: 370px;
             font-size: clamp(0.563rem, 0.403rem + 0.8vw, 1rem);
+            @media (max-width: 600px) {
+                text-align: center;
+                
+            }
             
         }
-        button {
-            max-width: 70px;
-            border: none;
-            background-color: #fff;
-            position: relative;
-            right: 20px;
-           
-        }
+        
         
         button {
             max-width: 170px;

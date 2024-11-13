@@ -13,7 +13,6 @@ const Say = () => {
             <h4>TESTIMONIALS</h4>
             <h1>Read What Other Have To Say</h1>
           </div>
-
           <div className="say__cards">
             <Card_say img="/say-img1.png" name="Andrew Rathore" info="Lorem Ipsum Dolor Dit Amet, Consectetur Adipiscing Elit. Nunc Ullamcorper Scelerisque Mi, In Malesuada Felis Malesuada Vel. "/>
             <Card_say img="/say-img2.png" name="Vera Duncan" info="Lorem Ipsum Dolor Dit Amet, Consectetur Adipiscing Elit. Nunc Ullamcorper Scelerisque Mi, In Malesuada Felis Malesuada Vel. "/>
