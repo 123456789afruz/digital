@@ -13,6 +13,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Testimonials from './pages/Testimonials'
 import Contacts from './pages/Contacts'
+import Footer from './components/Footer/Footer'
 
 
 const App = () => {
@@ -21,16 +22,11 @@ const App = () => {
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/' element={<About/>}/>
-        <Route path='/' element={<Testimonials/>}/>
-        <Route path='/' element={<Contacts/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/testimonials' element={<Testimonials/>}/>
+        <Route path='/contacts' element={<Contacts/>}/>
       </Routes>
-      <Hero btn="Contact Us"/>
-      <Companies/>
-      <System title="Branding & Design System" text="Commonly Used In The Graphic, Print & Publishing Industris For Previewing Visual Layout And Mockupsv" img="/system-img.png"/> 
-      <Plugin title="Custome & Plugin Development" text="Commonly used in the graphic, print & publishing industris for previewing visual layout and mockups" img="/system-img2.png"/>
-      <Say/>
-      <Be title="Be a part of the next big thing" text="We work with Brans, Startups, to SMEs. Colaborate for more impact and growt" img="/be-img.png" btn="Contact Us"/>
+      <Footer/>
 
     </>
   )

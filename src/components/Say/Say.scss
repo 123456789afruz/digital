@@ -1,5 +1,5 @@
 .say {
-    margin: 100px 0;
+    margin: 70px 0;
     &__title {
         text-align: center;
         display: flex;
@@ -13,7 +13,7 @@
         h1 {
             // font-size: 72px;
             font-size: clamp(2rem, 1.091rem + 4.55vw, 4.5rem);
-            max-width: 600px;
+            max-width: 800px;
             padding: 40px;
         }
     }
@@ -25,12 +25,12 @@
 
 
 .say__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    
     justify-content: space-between;
     gap: 15px;
     @media (max-width: 600px) {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import './System.scss'
 
-const System = ({title, text, img, btn}) => {
+const System = ({title, text, img}) => {
   return (
     <>
       <section className="system">

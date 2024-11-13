@@ -1,7 +1,7 @@
 import React from 'react'
 import './Plugin.scss'
 
-const Plugin = ({title, text, img, btn}) => {
+const Plugin = ({title, text, img, }) => {
   return (
     <>
       <section className="plugin">
