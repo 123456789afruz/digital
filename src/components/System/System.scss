@@ -1,11 +1,12 @@
 .system {
-    margin-top: 70px;
     img {
         max-width: 450px;
         width: 100%;
     }
     margin: 0 0 100px;
     &__wrapper {
+        margin-top: 50px;
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
