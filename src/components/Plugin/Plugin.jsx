@@ -1,12 +1,12 @@
 import React from 'react'
 import './Plugin.scss'
 
-const Plugin = ({title, text, img, }) => {
+const Plugin = ({title, text, img, num}) => {
   return (
     <>
       <section className="plugin">
         <div className="container">
-            <div className="plugin__wrapper">
+            <div className="plugin__wrapper" id={`hero${num}`}>
                 <div className="plugin__info">
                 <h2>{title}</h2>
                 <p>{text}</p>

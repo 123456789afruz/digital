@@ -1,12 +1,12 @@
 import React from 'react'
 import './System.scss'
 
-const System = ({title, text, img}) => {
+const System = ({title, text, img, num}) => {
   return (
     <>
       <section className="system">
         <div className="container">
-            <div className="system__wrapper">
+            <div className="system__wrapper" id={`hero${num}`}>
             <img src={img} alt="" />
                 <div className="system__info">
                 <h2>{title}</h2>
